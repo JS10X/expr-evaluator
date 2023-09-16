@@ -45,7 +45,6 @@ func (s *scanner) reset() {
 
 // Performs lexical analysis, building the list of tokens from the input string.
 func tokenize(input string, sc *scanner, variable any) error {
-
 	var number, functionName string
 	var currentToken *token
 	var isLastRun, ok bool

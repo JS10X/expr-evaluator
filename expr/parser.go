@@ -91,7 +91,6 @@ func parseE(sc *scanner) treeNode {
 			}
 
 			nA = newAdd(nA, nB)
-
 			if len(args) > 0 {
 				lookahead = sc.peek()
 				if lookahead == nil || lookahead.typeof == rparen {
@@ -108,7 +107,6 @@ func parseE(sc *scanner) treeNode {
 			}
 
 			nA = newSubtract(nA, nB)
-
 			if len(args) > 0 {
 				lookahead = sc.peek()
 				if lookahead == nil || lookahead.typeof == rparen {

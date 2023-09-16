@@ -166,7 +166,6 @@ func (o *function) Print() {
 }
 
 func evalT(fn func(params ...float64) (any, error), nodes ...treeNode) (any, error) {
-
 	var ct any
 	var cv float64
 	var err error
@@ -193,7 +192,6 @@ func evalT(fn func(params ...float64) (any, error), nodes ...treeNode) (any, err
 }
 
 func evalN(value any) (float64, error) {
-
 	switch v := value.(type) {
 	case string:
 		num, err := strconv.ParseFloat(v, 64)

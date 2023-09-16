@@ -170,7 +170,7 @@ var funcTable = map[string]*fncDescriptor{
 		},
 	},
 
-	// EQ(X,Y): Returns true if X is equal to Y
+	// EQ(X,Y): Returns 1 if X is equal to Y, otherwise 0
 	"EQ": {
 		args: 2,
 		invoke: func(args []treeNode) (any, error) {
@@ -183,7 +183,7 @@ var funcTable = map[string]*fncDescriptor{
 		},
 	},
 
-	// NE(X,Y): Returns true if X is not equal to Y
+	// NE(X,Y): Returns 1 if X is not equal to Y, otherwise 0
 	"NE": {
 		args: 2,
 		invoke: func(args []treeNode) (any, error) {
@@ -196,7 +196,7 @@ var funcTable = map[string]*fncDescriptor{
 		},
 	},
 
-	// GE(X,Y): Returns true if X is greater than or equal to Y
+	// GE(X,Y): Returns 1 if X is greater than or equal to Y, otherwise 0
 	"GE": {
 		args: 2,
 		invoke: func(args []treeNode) (any, error) {
@@ -209,7 +209,7 @@ var funcTable = map[string]*fncDescriptor{
 		},
 	},
 
-	// GT(X,Y): Returns true if X is greater than Y
+	// GT(X,Y): Returns 1 if X is greater than Y, otherwise 0
 	"GT": {
 		args: 2,
 		invoke: func(args []treeNode) (any, error) {
@@ -222,7 +222,7 @@ var funcTable = map[string]*fncDescriptor{
 		},
 	},
 
-	// LE(X,Y): Returns true if X is less than or equal to Y
+	// LE(X,Y): Returns 1 if X is less than or equal to Y, otherwise 0
 	"LE": {
 		args: 2,
 		invoke: func(args []treeNode) (any, error) {
@@ -235,7 +235,7 @@ var funcTable = map[string]*fncDescriptor{
 		},
 	},
 
-	// LT(X,Y): Returns true if X is less than Y
+	// LT(X,Y): Returns 1 if X is less than Y, otherwise 0
 	"LT": {
 		args: 2,
 		invoke: func(args []treeNode) (any, error) {
